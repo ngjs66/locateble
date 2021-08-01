@@ -1,5 +1,24 @@
 # locateble
 
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=for-the-badge)](#all-contributors-emoji-key)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+[![Node](https://img.shields.io/badge/Node-16+-339933?style=for-the-badge&logo=node.js)](https://nodejs.org/)
+[![npm](https://img.shields.io/badge/npm-7+-339933?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/npm)
+
+## Requirements (Hardware)
+- Raspberry Pi 3
+- Bluetooth Low Energy (BLE) beacons configured in iBeacons data format
+
+## Requirements (Software)
+- NodeJS v16+
+
+
 ## Installation guide
 
 ### 1. Check for latest distro on RasPi:

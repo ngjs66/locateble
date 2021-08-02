@@ -1,14 +1,16 @@
 // declare library
-var bleacon = require('bleacon');
+var BeaconScanner = require('node-beacon-scanner')
+var scanner = new BeaconScanner();
 
-// start scanner
-bleacon.startScanning(); // scan for any bleacons or can be replaced with uuid, major, minor, rssi to scan for specific beacons
+// set an Event handler for beacons 
+scanner.onadvertisement = (ad) => {
+	console.log(JSON.stringify(ad, null, ''));
+};
 
-// event to happen upon discover of beacon
-bleacon.on('discover', function(bleacon) {
-	// declare variables
-	var uuid = '';
-	var major = 0;
-	var minor = 0;
-	var measuredPower = -59;
+// start scanning 
+scanner.startScan().then(() => {
+	console.log('Started to scan');
+}).catch((error) => {
+	console.log(error);
 });
+	

@@ -4,7 +4,8 @@ var scanner = new BeaconScanner();
 
 // set an Event handler for beacons 
 scanner.onadvertisement = (ad) => {
-	console.log(JSON.stringify(ad, null, ''));
+	// log MAC address of beacons 
+	console.log(ad.address);
 };
 
 // start scanning 

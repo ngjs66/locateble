@@ -30,6 +30,7 @@ scanner.onadvertisement = (ad) => {
 	// connect to Mongo - interface
 	client.connect(err => {
 		const collection = client.db("fyp-ble").collection("beacons");
+		// function to compare time last logged vs time on db - 1 min, after 1 min notification is sent
 		var dateCompare = moment(dateFormat(new Date(), "isoDateTime"));
 		dateCompare.subtract(60, 'seconds');
 		// perform actions on the collection object

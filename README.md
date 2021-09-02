@@ -32,6 +32,6 @@ To remove and install latest [node/nodejs/npm](https://medium.com/@thedyslexicco
 
 ### 3. Install Node.js module @abandonware/noble & node-beacon-scanner:
 [**node-beacon-scanner**](https://www.npmjs.com/package/node-beacon-scanner) is the Node.js module (dependency) that is used in this project to scan beacons. The module supports iBeacon and Eddystone data formats. The module will have a different output based on the data format the beacon used is formatted. **Noble** module is the prerequisite Node.js module needed before using **node-beacon-scanner**. **Noble** is the BLE central module for Node.
-> NOTE: There are earlier versions of modules to scan beacons (such as **bleacon** module) however the **noble** module does not support Node v10 & later. As this project uses Nodev16+, a forked module of **noble**, which is [**@abandonware/noble**](https://github.com/abandonware/noble) is used instead.   
+> NOTE: There are earlier versions of modules to scan beacons (such as **bleacon** module) however the **noble** module does not support Node v10 & later. As this project uses Node v16+, a forked module of **noble**, which is [**@abandonware/noble**](https://github.com/abandonware/noble) is used instead.   
 - To install **noble** module use command ``` npm install @abandonware/noble ```
 - To install **node-beacon-scanner** use command ``` npm install node-beacon-scanner ```

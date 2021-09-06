@@ -24,7 +24,7 @@
 ### 1. Check for latest distro on RasPi:
 - Tested on Raspbian GNU/Linux 9 a.k.a stretch
 - To check current your current distro, use command: ``` cat /etc/os-release ```
-
+> NOTE: The version of Raspbian is critical as the Bluetooth protocol stack for RasPi (which is BlueZ) comes pre-installed with it.  On older versions of Raspbian, installation of BlueZ will need to be done manually.
  
 ### 2. Install latest version of node/nodejs/npm: 
 To remove and install latest [node/nodejs/npm](https://medium.com/@thedyslexiccoder/how-to-update-nodejs-npm-on-a-raspberry-pi-4-da75cad4148c).
